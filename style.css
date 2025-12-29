@@ -1,7 +1,13 @@
 * {
     margin: 0;
-    padding: 0;
+    padding: 20px;
     box-sizing: border-box;
+}
+
+.Kotak{
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
 }
 
 .Kotak1 {
