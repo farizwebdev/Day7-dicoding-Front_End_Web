@@ -20,3 +20,6 @@ dicoding.innerText = 'Belajar Programming di Dicoding Indonesia';
 // Mengambil googleLink dan mengubah teksnya
 const google = document.getElementById('googleLink');
 google.innerText = 'Mencari sesuatu di Google';
+
+// Menambahkan style pada semua button
+const buttons = document.querySelectorAll('.button');
