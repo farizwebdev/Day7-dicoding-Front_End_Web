@@ -12,3 +12,7 @@ const buttonPlay = button[3];
 const buttonPlayElement = buttonPlay.children[0];
 buttonPlayElement.setAttribute('disabled', true);
 console.log(buttonPlayElement);
+
+// Mengambil dicodingLink dan mengubah teksnya
+const dicoding = document.getElementById('dicodingLink');
+dicoding.innerText = 'Belajar Programming di Dicoding Indonesia';
