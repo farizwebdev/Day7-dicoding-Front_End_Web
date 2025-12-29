@@ -16,3 +16,7 @@ console.log(buttonPlayElement);
 // Mengambil dicodingLink dan mengubah teksnya
 const dicoding = document.getElementById('dicodingLink');
 dicoding.innerText = 'Belajar Programming di Dicoding Indonesia';
+
+// Mengambil googleLink dan mengubah teksnya
+const google = document.getElementById('googleLink');
+google.innerText = 'Mencari sesuatu di Google';
