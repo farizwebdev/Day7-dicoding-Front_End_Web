@@ -4,19 +4,19 @@
     box-sizing: border-box;
 }
 
-.kotak1 {
+.Kotak1 {
     width: 100px;
     height: 100px;
     background-color: red;
 }
 
-.kotak2 {
+.Kotak2 {
     width: 100px;
     height: 100px;
     background-color: green;
 }
 
-.kotak3 {
+.Kotak3 {
     width: 100px;
     height: 100px;
     background-color: blue;
