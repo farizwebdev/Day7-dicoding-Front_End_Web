@@ -23,3 +23,7 @@ google.innerText = 'Mencari sesuatu di Google';
 
 // Menambahkan style pada semua button
 const buttons = document.querySelectorAll('.button');
+
+for (btn of buttons) {
+    btn.children[0].style.borderRadius = '6px';
+}
