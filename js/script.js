@@ -38,6 +38,14 @@ document.addEventListener(RENDER_EVENT, function () {
   console.log(todos);
 });
 
+// Membuat Logika Menambahkan Todo ke selesai
+function addTaskToCompleted (todoId) {
+  const todoTarget = findTodo(todoId);
+  if (todoTarget == null) return;
+  todoTarget.isCompleted = true;
+  document.dispatchEvent(new Event(RENDER_EVENT));
+}
+
 // Membuat Logika Menampilkan Todo
 function makeTodo(todoObject) {
   const textTitle = document.createElement('h2');
@@ -55,7 +63,7 @@ function makeTodo(todoObject) {
   container.append(textContainer);
   container.setAttribute('id', `todo-${todoObject.id}`);
 
-  
+
    if (todoObject.isCompleted) {
     const undoButton = document.createElement('button');
     undoButton.classList.add('undo-button');
