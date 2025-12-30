@@ -120,6 +120,25 @@ function makeTodo(todoObject) {
   return container;
 }
 
+function removeTaskFromCompleted(todoId) {
+  const todoTarget = findTodoIndex(todoId);
+ 
+  if (todoTarget === -1) return;
+ 
+  todos.splice(todoTarget, 1);
+  document.dispatchEvent(new Event(RENDER_EVENT));
+}
+ 
+ 
+function undoTaskFromCompleted(todoId) {
+  const todoTarget = findTodo(todoId);
+ 
+  if (todoTarget == null) return;
+ 
+  todoTarget.isCompleted = false;
+  document.dispatchEvent(new Event(RENDER_EVENT));
+}
+
 
 document.addEventListener(RENDER_EVENT, function () {
   console.log(todos);
