@@ -7,9 +7,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// Membuat Array dan Event RENDER
 const todos = [];
 const RENDER_EVENT = 'render-todo';
 
+// FUngsi Menambah Todo
 function addTodo() {
   const textTodo = document.getElementById('title').value;
   const timestamp = document.getElementById('date').value;
@@ -21,10 +23,12 @@ function addTodo() {
   document.dispatchEvent(new Event(RENDER_EVENT));
 };
 
+// Fungsi Membuat Generate ID 
 function generateId() {
   return +new Date();
 }
- 
+
+// Fungsi Membuat Objek Todo
 function generateTodoObject(id, task, timestamp, isCompleted) {
   return {
     id,
@@ -46,6 +50,7 @@ function addTaskToCompleted (todoId) {
   document.dispatchEvent(new Event(RENDER_EVENT));
 }
 
+// Fungsi Find Todo
 function findTodo(todoId) {
   for (const todoItem of todos) {
     if (todoItem.id === todoId) {
