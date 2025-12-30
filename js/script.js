@@ -33,3 +33,7 @@ function generateTodoObject(id, task, timestamp, isCompleted) {
     isCompleted
   }
 }
+
+document.addEventListener(RENDER_EVENT, function () {
+  console.log(todos);
+});
