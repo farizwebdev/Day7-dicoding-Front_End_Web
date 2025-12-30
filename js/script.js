@@ -139,6 +139,15 @@ function undoTaskFromCompleted(todoId) {
   document.dispatchEvent(new Event(RENDER_EVENT));
 }
 
+function findTodoIndex(todoId) {
+  for (const index in todos) {
+    if (todos[index].id === todoId) {
+      return index;
+    }
+  }
+ 
+  return -1;
+}
 
 document.addEventListener(RENDER_EVENT, function () {
   console.log(todos);
