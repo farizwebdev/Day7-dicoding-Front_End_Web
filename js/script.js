@@ -37,3 +37,5 @@ function generateTodoObject(id, task, timestamp, isCompleted) {
 document.addEventListener(RENDER_EVENT, function () {
   console.log(todos);
 });
+
+// Membuat Logika Menampilkan Todo
