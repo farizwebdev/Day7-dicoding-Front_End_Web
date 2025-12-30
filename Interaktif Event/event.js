@@ -6,7 +6,7 @@ function welcome() {
 }
 
 // Menjalankan Fungsi welcome ketika halaman selesain di load
-document.body.onload = welcome;
+// document.body.onload = welcome;
 
 // Membuat Fungsi Increment
 function increment() {
@@ -30,4 +30,4 @@ function increment() {
 }
 
 // Menjalankan Fungsi Increment ketika tombol di klik
-document.getElementById("incrementButton").onclick = increment;
+// document.getElementById("incrementButton").onclick = increment;
