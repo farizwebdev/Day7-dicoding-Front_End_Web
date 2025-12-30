@@ -12,6 +12,7 @@ document.body.onload = welcome;
 function increment() {
     document.getElementById("count").innerText++;
 
+    // Buat kondisi jika count sudah mencapai 5 
     if (document.getElementById("count").innerText == 5) {
         const pesan = document.createElement("h4");
         pesan.innerText = "Omaigatt! Kamu mendapatkan hadiah tersembunyiiii!!";
@@ -21,10 +22,11 @@ function increment() {
             "src",
             "https://raw.githubusercontent.com/dicodingacademy/a315-web-pemula-labs/shared-files/catto.jpg",
         );
-    }
 
     const contents = document.querySelector(".contents");
     contents.appendChild(pesan).appendChild(gambar);
+
+    }
 }
 
 // Menjalankan Fungsi Increment ketika tombol di klik
