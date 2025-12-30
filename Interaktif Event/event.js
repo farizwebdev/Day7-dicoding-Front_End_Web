@@ -7,3 +7,11 @@ function welcome() {
 
 // Menjalankan Fungsi welcome ketika halaman selesain di load
 document.body.onload = welcome;
+
+// Membuat Fungsi Increment
+function increment() {
+    document.getElementById("count").innerText++;
+}
+
+// Menjalankan Fungsi Increment ketika tombol di klik
+document.getElementById("incrementButton").onclick = increment;
