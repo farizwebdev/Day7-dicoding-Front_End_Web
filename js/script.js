@@ -55,6 +55,17 @@ function findTodo(todoId) {
   return null;
 }
 
+document.addEventListener(RENDER_EVENT, function () {
+  const uncompletedTODOList = document.getElementById('todos');
+  uncompletedTODOList.innerHTML = '';
+  for (const todoItem of todos) {
+    const todoElement = makeTodo(todoItem);
+    if (!todoItem.isCompleted) {
+      uncompletedTODOList.append(todoElement);
+    }
+  }
+});
+
 // Membuat Logika Menampilkan Todo
 function makeTodo(todoObject) {
   const textTitle = document.createElement('h2');
