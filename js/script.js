@@ -7,6 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+const todos = [];
+const RENDER_EVENT = 'render-todo';
+
 function addTodo() {
   const textTodo = document.getElementById('title').value;
   const timestamp = document.getElementById('date').value;
