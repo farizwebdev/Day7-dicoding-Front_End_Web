@@ -18,3 +18,15 @@ function addTodo() {
   document.dispatchEvent(new Event(RENDER_EVENT));
 };
 
+function generateId() {
+  return +new Date();
+}
+ 
+function generateTodoObject(id, task, timestamp, isCompleted) {
+  return {
+    id,
+    task,
+    timestamp,
+    isCompleted
+  }
+}
